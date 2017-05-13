@@ -1,0 +1,55 @@
+h2{
+  letter-spacing: 5px;
+}
+
+#form_holder{
+  background: #FFFAD5;
+  position:absolute;
+  width:260px;
+  height:auto;
+  padding:20px;
+  /*CENTERING THE BOX*/
+  left:50%;
+  margin-left:-150px;
+  top:50%;
+  margin-top:-159px;
+  box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+}
+
+#form_holder form{
+  width:50%;
+  margin-left: 25%;
+  margin-top:35px;
+  margin-bottom:20px;
+}
+
+#form_holder form .inp_coll{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+#form_holder form .inp_coll #submit_btn{
+  width:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  border:none;
+  background: #105B63;
+  color:#fff;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+h5{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+h5 a{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color:#BD4932;
+  cursor: pointer;
+}

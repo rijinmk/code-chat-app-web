@@ -1,0 +1,62 @@
+@font-face{
+  font-family:robotoL;
+  src:url("fonts/Roboto-Light.ttf");
+}
+
+@font-face{
+  font-family:robotoT;
+  src:url("fonts/Roboto-Thin.ttf");
+}
+
+@font-face{
+  font-family:robotoM;
+  src:url("fonts/Roboto-Medium.ttf");
+}
+
+*{
+  margin:0px;
+  padding:0px;
+}
+
+body{
+  font-family: robotoL;
+  background:#FFD34E;
+}
+
+label{
+  font-size:13px;
+  letter-spacing: 1px;
+  opacity: 0.6;
+}
+
+form input[type='text'], input[type='password']{
+  margin-top: 3px;
+  font-size: 15px;
+  outline: none;
+  width:100%;
+  background: none;
+  border:none;
+  font-family: robotoL;
+  border-bottom:1px solid #000;
+}
+
+a{
+  text-decoration: none;
+  color:#000;
+}
+
+#error{
+  width:100%;
+  background: #BD4932;
+  color: #fff;
+  text-align: center;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.3);
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  display:none;
+  letter-spacing: 1px;
+  font-size: 13px;
+  line-height: 40px;
+  height:40px;
+}

@@ -1,0 +1,244 @@
+body{
+  background: #343642;
+}
+
+#main_chat{
+  width:80%;
+  height:80%;
+  background-color: #000000;
+  position: absolute;
+  top:10%;
+  left:10%;
+  box-shadow: 3px 3px 20px rgba(0,0,0,0.6);
+}
+
+#main_chat .info_header{
+  height:80px;
+  background: #111111;
+}
+
+#main_chat .info_header .user_dp{
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  position: relative;
+  top:10px;
+  left:15px;
+}
+
+#main_chat .info_header ul{
+  width:200px;
+  height:50px;
+  position: absolute;
+  top:13px;
+  right:15px;
+  text-align: center;
+  background: #262626;
+}
+
+#main_chat .info_header ul li{
+  list-style: none;
+  width:25px;
+  height:25px;
+  position: relative;
+  top:9px;
+  display:inline-block;
+  margin:2px;
+}
+
+#main_chat .info_header .user_fullname{
+  text-transform: uppercase;
+  position: absolute;
+  top:20px;
+  left:90px;
+  letter-spacing: 2px;
+  color:#ffffff;
+}
+#main_chat .info_header .user_username{
+  position: absolute;
+  top:39px;
+  left:90px;
+  font-size: 10px;
+  opacity: 0.5;
+  letter-spacing: 1px;
+  color:#ffffff;
+}
+
+#main_chat .info_header .logout_me{
+  color:#fff;
+  position: absolute;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding:5px 8px 5px 8px;
+  background:#2F343B;
+  top:26px;
+  right:240px;
+}
+
+#main_chat #chat_here{
+  width:100%;
+  float: left;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+
+#main_chat #chat_here *{
+  float: left;
+}
+
+#main_chat #chat_here #chat_text{
+  width:80%;
+  padding:13px;
+  outline: none;
+  font-size: 16px;
+  font-family: robotoL;
+  border:none;
+  letter-spacing: 1px;
+}
+
+#main_chat #chat_here #send_chat_text{
+  width:20%;
+  position: absolute;
+  right:0px;
+  height: 47px;
+  text-align: center;
+  line-height: 44px;
+  cursor:pointer;
+  letter-spacing: 1px;
+  color:#fff;
+  background:#962D3E;
+}
+#main_chat #chats_holder{
+  height:calc(100% - 128px);
+  position: relative;
+  top: 46px;
+  background: #F2EBC7;
+}
+
+#main_chat #chats_holder #messages{
+  width:90%;
+  height:90%;
+  position: absolute;
+  left:0%;
+  top:5%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.color_selected{
+  border:2px solid #7ECEFD;
+}
+
+#messages .each_message{
+  margin-bottom: 15px;
+  position: relative;
+  left:20px;
+}
+
+#messages .each_message .each_message_dp{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#messages .each_message .each_message_flag{
+  width:22px;
+  height:auto;
+}
+
+#messages .each_message .each_message_fullname{
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#messages .each_message .each_message_text{
+  font-size: 18px;
+  letter-spacing: 1px;
+  width:90%;
+  position: relative;
+  left:20px;
+  top:5px;
+  word-break: break-all;
+}
+
+#messages .each_message .inner_info{
+  border-radius: 10px;
+  position: relative;
+  padding:15px;
+  width:45%;
+  left:50px;
+  padding-bottom: 19px;
+  padding-right: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+#online_people{
+  width:25%;
+  height:100%;
+  position:absolute;
+  right:0px;
+  background: #979C9C;
+}
+
+#online_people h5{
+  position:relative;
+  font-size: 20px;
+  top:20px;
+  letter-spacing: 2px;
+}
+
+#online_people .onlines{
+  width:70%;
+  margin-left: 15%;
+  background:#fff;
+  position: relative;
+  top:40px;
+  height:auto;
+  margin-bottom: 20px;
+}
+
+#online_people .onlines .user_dp_online{
+  width:30px;
+  height:30px;
+}
+
+#online_people .onlines .user_dp_fullname{
+  position:absolute;
+  font-size: 12px;
+  left:40px;
+  top:50%;
+  margin-top:-7.5px;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width:700px){
+  #online_people{
+    display:none;
+  }
+  #messages .each_message{
+    transform: scale(0.9);
+    left:0px;
+  }
+  #main_chat #chats_holder{
+    top: 98px;
+    height:calc(100% - 180px);
+  }
+  #main_chat #chat_here{
+    top:52px;
+  }
+  #main_chat .info_header ul{
+    left:0px;
+    width:100%;
+    top: 82px;
+  }
+  #main_chat .info_header .logout_me{
+    right:20px;
+  }
+  #messages .each_message .inner_info{
+    width:75%;
+  }
+}
